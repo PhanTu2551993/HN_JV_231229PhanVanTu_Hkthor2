@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">My Project</h1>
+    <div>
+      <form class="container" id="form-input">
+        <div>
+          <label>@</label>
+          <input type="text" placeholder="Project Name" id="projectname" />
+        </div>
+        <div>
+          <label>@</label>
+          <input type="text" placeholder="Image URL" id="imageurl" />
+        </div>
+        <div>
+          <label>@</label>
+          <input type="text" placeholder="Link" id="link" />
+        </div>
+        <div>
+          <label>@</label>
+          <input type="text" placeholder="Tags (Ex: React,CSS)" id="tags" />
+        </div>
+        <div>
+          <button type="submit" id="btn-submit">+ New Project</button>
+        </div>
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="width: 50px">#</th>
+            <th style="width: 260px">Project Name</th>
+            <th style="width: 100px">Image URL</th>
+            <th style="width: 450px">Link</th>
+            <th style="width: 250px">Tags</th>
+            <th style="width: 250px">Action</th>
+          </tr>
+        </thead>
+        <tbody id="bodytable"></tbody>
+      </table>
+    </div>
+    <!-- <h1 style="text-align: center">My Tech Stack</h1>
+    <div>
+      <input type="file" id="imageUpload" accept="image/*" />
+      <button onclick="uploadImage()">Upload Image</button>
+    </div> -->
+    <script src="./admin.js"></script>
+  </body>
+</html>
